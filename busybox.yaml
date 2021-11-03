@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: v1
 kind: Pod
 metadata:
  name: busybox
@@ -8,4 +8,4 @@ spec:
    image: busybox
    args:
      - sleep
-     - "7200"
+     - "3600"
