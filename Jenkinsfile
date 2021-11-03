@@ -1,10 +1,10 @@
 pipeline {
 
-  agent any
+  agent { label 'kubepod' }
 
   stages {
 
-    stage('Checkout Source') {
+    stage('Check Source') {
       steps {
         git url:'https://github.com/nfidelc/jenkins.git', branch:'learning'
       }
