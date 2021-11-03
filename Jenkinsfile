@@ -6,7 +6,7 @@ pipeline {
 
     stage('Check Source') {
       steps {
-        git url:'https://github.com/nfidelc/jenkins.git', branch:'learning'
+        git url:'https://github.com/nfidelc/jenkins.git'
       }
     }
 
