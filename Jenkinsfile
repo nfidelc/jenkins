@@ -1,6 +1,6 @@
 pipeline {
 
-  agent { label 'owner' }
+  agent any
 
   stages {
 
