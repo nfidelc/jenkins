@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage("Build") {
       steps {
-        git url:'https://github.com/nfidelc/jenkins.git'
+        git url:'https://github.com/nfidelc/jenkins.git', branch:'mains'
         }
     }
     stage("Deploy") {
