@@ -14,7 +14,7 @@ pipeline {
     stage("Deploy") {
       steps {
         script {
-          kubernetesDeploy(configs: "busybox.yaml")
+          kubernetesDeploy(configs: "busybox.yaml", kubeconfigId: "mykubeconfig")
         }
       }
     }
