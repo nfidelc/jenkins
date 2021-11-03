@@ -13,7 +13,7 @@ pipeline {
     stage('Deploy App') {
       steps {
         script {
-          kubernetesDeploy(configs: "busbox.yaml", kubeconfigId: "mykubeconfig")
+          kubernetesDeploy(configs: "busybox.yaml", kubeconfigId: "mykubeconfig")
         }
       }
     }
